@@ -30,3 +30,169 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+
+/*Timer*/
+
+.input-box-styles {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 9px;
+  margin-top: 36px;
+  margin-left: 156px;
+}
+
+.datetime-picker {
+  border: solid, #808080;
+  width: 272px;
+  height: 40px;
+  border-radius: 8px;
+  border-width: 1px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.datetime-picker:hover {
+  border-color: #2e2f42;
+  border-width: 1px;
+}
+
+.datetime-picker:active,
+.datetime-picker:focus {
+  border-color: #4e75ff;
+  border-width: 1px;
+}
+
+.datetime-picker:disabled {
+  border-color: #808080;
+  border-width: 1px;
+  color: #808080;
+}
+
+.start-button {
+  border-radius: 8px;
+  border-width: 0px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.start-button:hover {
+  background-color: #6c8cff;
+  color: #ffffff;
+}
+
+.start-button:disabled {
+  background: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 28px;
+  margin-top: 42px;
+  margin-left: 156px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
+  text-transform: uppercase;
+}
+
+/*Snackbar*/
+
+.delay-styles {
+  margin-top: 42px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-left: 156px;
+}
+
+.delay-input {
+  width: 360px;
+  display: block;
+  margin-top: 15px;
+  height: 40px;
+  border-radius: 4px;
+  border-width: 1px;
+  stroke: #808080;
+  padding-left: 14px;
+}
+
+.delay-input:hover {
+  stroke: #000000;
+}
+
+.delay-input:focus,
+.delay-input:active {
+  border-color: #4e75ff;
+}
+
+.fieldset-styles {
+  box-sizing: border-box;
+  margin-top: 23px;
+  width: 360px;
+  border-radius: 4px;
+  border-width: 2px;
+  stroke: #808080;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
+  margin-left: 156px;
+}
+
+.fieldset-styles:checked,
+.fieldset-styles:hover {
+  border-color: #000000;
+}
+
+.button-styles {
+  border-width: 0px;
+  margin-top: 23px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-left: 156px;
+}
+
+.button-styles:hover {
+  background-color: #6c8cff;
+}
