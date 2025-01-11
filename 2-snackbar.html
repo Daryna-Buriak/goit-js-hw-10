@@ -1,13 +1,19 @@
-<script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-<script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-BlgSUhsj.js"></script>
-<link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
-<form class="form">
-  <label>
-    Delay (ms)
-    <input type="number" name="delay" required />
-  </label>
+<head>
+  <script type="module" crossorigin src="/goit-js-hw-10/assets/base-C8BXQLAk.js"></script>
+  <script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-BlgSUhsj.js"></script>
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/base-CMM7Pl3-.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-B7UpJXpi.css">
+</head>
+<form class="form snackbar">
+  <div class="delay-styles">
+    <label>
+      Delay (ms)
+      <input type="number" name="delay" class="delay-input" required />
+    </label>
+  </div>
 
-  <fieldset>
+  <fieldset class="fieldset-styles">
     <legend>State</legend>
     <label>
       <input type="radio" name="state" value="fulfilled" required />
@@ -19,6 +25,6 @@
     </label>
   </fieldset>
 
-  <button type="submit">Create notification</button>
+  <button type="submit" class="button-styles">Create notification</button>
 </form>
 
