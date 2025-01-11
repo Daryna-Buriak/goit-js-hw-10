@@ -196,3 +196,14 @@ main:has(.back-link) {
 .button-styles:hover {
   background-color: #6c8cff;
 }
+
+.iziToast-wrapper-bottomRight {
+  right: 0;
+  top: 0;
+  text-align: right;
+  width: 302px;
+  height: 64px;
+  margin-top: 36px;
+  margin-right: 155px;
+  color: #ffffff;
+}
