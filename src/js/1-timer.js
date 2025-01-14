@@ -31,7 +31,7 @@ const options = {
     if (dateDifference <= 0) {
       iziToast.error({
         title: 'Error',
-        message: 'Illegal operation',
+        message: 'Please choose a date in the future',
       });
       //window.alert('Please choose a date in the future');
       startBttn.disabled = true;
