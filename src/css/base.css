@@ -58,7 +58,6 @@ main:has(.back-link) {
   border-width: 1px;
 }
 
-.datetime-picker:active,
 .datetime-picker:focus {
   border-color: #4e75ff;
   border-width: 1px;
@@ -87,6 +86,10 @@ main:has(.back-link) {
 .start-button:hover {
   background-color: #6c8cff;
   color: #ffffff;
+}
+
+.start-button:active {
+  background-color: #4e75ff;
 }
 
 .start-button:disabled {
@@ -124,6 +127,17 @@ main:has(.back-link) {
   line-height: 150%;
   color: #2e2f42;
   text-transform: uppercase;
+}
+
+.iziToast-wrapper-bottomRight {
+  right: 0;
+  top: 0;
+  text-align: right;
+  width: 302px;
+  height: 64px;
+  margin-top: 36px;
+  margin-right: 155px;
+  color: #ffffff;
 }
 
 /*Snackbar*/
@@ -195,15 +209,4 @@ main:has(.back-link) {
 
 .button-styles:hover {
   background-color: #6c8cff;
-}
-
-.iziToast-wrapper-bottomRight {
-  right: 0;
-  top: 0;
-  text-align: right;
-  width: 302px;
-  height: 64px;
-  margin-top: 36px;
-  margin-right: 155px;
-  color: #ffffff;
 }
