@@ -7,9 +7,6 @@ const form = document.querySelector('.form');
 const delayInput = document.querySelector('.delay-input');
 const createBtn = document.querySelector('.button-styles');
 
-//console.dir(delayInput);
-//console.dir(createBtn);
-
 form.addEventListener('submit', event => {
   event.preventDefault();
   const selectedDelay = Number(delayInput.value);
@@ -19,25 +16,25 @@ form.addEventListener('submit', event => {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (selectedState === 'fulfilled') {
-        promise.then(
-          iziToast.success({
-            title: 'OK',
-            message: `Fulfilled promise in ${selectedDelay}ms`,
-          })
-        );
+        resolve(selectedDelay);
       } else {
-        promise.catch(
-          iziToast.error({
-            title: 'Error',
-            message: `Rejected promise in ${selectedDelay}ms`,
-          })
-        );
+        reject(selectedDelay);
       }
     }, selectedDelay);
     form.reset();
   });
 
-  //console.log(selectedDelay);
-  //console.log(state);
-  //console.log(selectedState);
+  promise
+    .then(selectedDelay => {
+      iziToast.success({
+        title: 'OK',
+        message: `Fulfilled promise in ${selectedDelay}ms`,
+      });
+    })
+    .catch(selectedDelay => {
+      iziToast.error({
+        title: 'Error',
+        message: `Rejected promise in ${selectedDelay}ms`,
+      });
+    });
 });
